@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando HTML5 E CSS3 para Animação</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+           }
+
+        .quadro{
+            width: 1000px;
+            height: 600px;
+            position: relative;
+            overflow: hidden;
+            background-color:rgb(173, 118, 118);
+           
+        }
+
+        .quadro img {
+            position: absolute;
+        }
+
+        .nuvem{
+            animation: nuvem-move 10s linear forwards infinite;
+        }
+
+        .a{
+            width: 120px;
+            top:80px;
+            left: 10px;
+        }
+        .b{
+            width: 120px;
+            top:80px;
+            right: 90px;
+        }
+        .c{
+            width: 120px;
+            top: 80px;
+            right: 300px;
+        }
+
+
+        .onibus{
+            width: 40%;
+            bottom: 0;
+            left: 50px;
+            animation: onibus-move 20s linear forwards infinite;
+        }
+
+
+        @keyframes onibus-move{
+            to{
+                transform: translate(750px);
+            }
+        }
+
+        @keyframes nuvem-move{
+            to{
+                transform: translate(-40px);
+            }
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+    <div class="quadro">
+        <img src="gif/onibus.gif" class="onibus">
+        <img src="gif/nuvem1.png"  class="nuvem a">
+        <img src="gif/nuvem.2.png" class="nuvem b">
+        <img src="gif/nuvem.3.png" class="nuvem c">
+    </div>
+
+
+    
+</body>
+</html>

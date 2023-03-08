@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.media-query.css">
+    <title>Document</title>
+</head>
+<body>
+        <main>
+            <section id="login">
+            <div id="img">
+                <!--imagem-->
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Entra com email e senha</p>
+                <form action="login.php" method="POST">
+                    <div class="dados">
+                        
+                        <span  class="material-icons md-18">email</span>    
+                        
+
+                        <input type="email" name="login" id="ilogin" 
+                        placeholder="Digite seu e-mail" required maxlength="40" autocomplete="on">
+                        <label for="ilogin">login</label>
+
+                    </div>
+
+                    <div class="dados">                        
+                        <span  class="material-icons md-18">key</span>     
+                        <!---https://developers.google.com/fonts/docs/material_icons?hl=pt-br-->
+                        
+
+                        <input type="password" name="senha" id="isenha" placeholder="Digte senha" required minlength="8" maxlength="12" autocomplete="off">
+                        <label for="isenha">senha</label>
+                    </div>
+
+                        <input type="submit" value="Enviar">
+                        <button>Recuperar senha</button>
+                        
+                        
+
+
+                   
+                </form>
+            </div>
+        </section>
+        </main>
+    
+</body>
+</html>
